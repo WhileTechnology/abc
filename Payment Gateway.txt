@@ -1,0 +1,109 @@
+
+What is Payment Gateway?
+
+Simply put, a payment gateway helps in processing credit card data securely between the customer and the merchant, and also between merchant and the payment processor. Think of payment gateway as a middleman between the merchant and the sponsoring bank.
+
+A payment gateway, like a checkpoint at the end of a bridge, is an application that authorizes attempts of purchase for ecommerce businesses. Like an armor and shield, payment gateways acts to protect customers against identity theft and phishing by encrypting credit card numbers of customers.
+
+If you’re the owner of a web shop and you want only the best of your business and your customers, you’ll be convinced that signing up with a secured Magento payment gateway is not only logical, but this is the right way to doing business.
+
+With Magento’s secured payment gateway, you and your customers get to view the complete history of your successful online orders. Better customer satisfaction can simply draw profits to your business.
+
+Benefits of Magento Payment Gateways to Your Business
+
+Magento is one of the most popular and best reviewed ecommerce website for medium-sized and large-sized enterprises. When it comes to payment gateways for Magento, here are some of the key advantages to keep in mind:
+
+Mature platform for building ecommerce websites allows for easy integration of major payment gateways and apply different payment methods. And it is also secure to use payment gateways for Magento-built sites because transactions are easily encrypted. Amazon and Google are also well-supported.
+The notification and RSS feeds features are helpful tool for marketing. Registered customers of the site can receive new product announcements while the RSS feeds can attract new orders from customers.
+With its complex features and capabilities like ability to create and compare a list of products and assign custom prices and offer discounts, customers can easily make bulk purchases using Magento-based online store.
+Magento keeps an archive of invoices, giving customers the ability to print packing slips and invoices anytime they desire with a single click of a button. Customers can create, view and place orders from an administrative panel but more than that, they also can create invoices, credits and make single or multiple shipments for every order.
+One very good feature of Magento is the ability to generate order call center, which can help in creating new customers and gathering data from your ecommerce site’s existing customers. Because such feature also lets you view shopping carts and find out which items customers wish to buy, customers can be notified when special offers are available.
+Following next are our top ten best payment gateways for Magento:
+
+ 
+
+1. PayPal
+ 
+
+paypal
+
+One of the most popular and top-tier payment acquirer, Paypal has reported in 2011 that it processed $4 billion in payments. Paying through Paypal can be done through a user’s existing account or with a credit card. Payment or money can then be sent via email of a user, a helpful way to entice users to sign up an account with Paypal. There is also a feature that lets users to send money through the service.
+
+Paypal asks no setup or monthly fees but in every transaction made with the service, it takes 2.9% +$0.30.
+
+ 
+
+2. Authorize.Net
+Authorize.Net
+
+The go-to payment gateway services for Magento among many a whopping 300,000 ecommerce merchants, Authorize.net is unbelievably popular after it went primetime in 1996. Since then, the service provider has already accommodated billions of transactions to processing networks on behalf of merchant customers.
+
+Setup fee is $99 with $20 monthly cost and taking $0.10 per transaction. Apart from Magento, Authorize.net is used to accept payment by Volusion and X-Cart.
+
+ 
+
+3. Braintree
+braintree
+
+Popular tech startups like Airbnb and LivingSocial are known users of the payment gateway Braintree, which charges a transaction fee of 2.9% + %0.30 for qualified cards. The online payment gateway and merchant account service has no setup cost.
+
+ 
+
+4. Sage Pay
+sagepay
+
+For over 40,000 businesses using it, Sage Pay has reportedly been delivering secure payment services processing of up to millions of payment every month. As well as its online processing method, payment over the phone is also allowed once integrated to your website or ecommerce platform.
+
+While it doesn’t impose fees nor contracts, a merchant account application process in Sage Pay can take around 5-10 working days.
+
+ 
+
+5. Google Checkout
+google checkout
+
+The strongest rival of Paypal is Google Checkout and it got plenty of benefits to lure merchants to jump ship. Millions of Internet users with Google accounts can pay for the products and services they purchase through an account connected to their Google profile – making for faster and efficient transactions – surely an obvious edge of this payment gateway for Magento.
+
+For sales less than $3,000, Google charges a starting fee per transaction of 2.9%+$0.30. But this percentage goes down depending on the merchant’s sales volume every month.
+
+ 
+
+6. Amazon Payment
+amazon
+
+Launched in 2007 by Amazon, Amazon Payments allows for sending (through ACH) and receiving money using its API. With a starting pricing of 2.9%+ $0.30 per transactions. For payments under $10, the standard pricing is 5.0%+ $0.05 per transaction.
+
+The payment gateway is flexible and secure and Amazon offers two services for businesses: Checkout by Amazon (CBA) and Amazon Simple Pay (ASP).
+
+ 
+
+7. WePay
+wepay
+
+For customers looking for ways to take in payments, such as event tickets, products, donations, and more of the likes, WePay is a convenient and efficient payment processor. Customers only need to add an e-store pages to their services.
+
+As a payment gateway tool, of course, WePay also accepts credit cards and bank account payments system online. This popular system of payment processor for Magento currently charges 3.5% transaction fee (with a $0.50 minimum) for credit card payment processing and $0.50 for bank payments. There’s no setup or monthly costs.
+
+ 
+
+8. 2CheckOut
+2checkout
+
+Combining the power of adding merchant account and payment gateway, 2Checkout or 2CO is an merchant account alternative that allows customers to receive credit card payments, as well as Paypal payments.
+
+It also offers international payments, shopping cart stores and recurring billing capabilities. It also offers 8 payment methods, 15 languages and 26 currencies. Not only it is easy to integrate to your ecommerce site, 2COis highly compatible with Joomla shopping cart extensions like redSHOP and VirtueMart. On a per transaction basis, 2Checkout charges 3.99% + $0.45 and $10.99 monthly service fee.
+
+ 
+
+9. Dwolla
+dwolla
+
+Dwolla commands $1 million payment processing on a daily basis. While setting up of Dwolla is quite similar with Paypal, this payment gateway for Magento ecommerce is less popular accounting to its being new in the payment gateway space.
+
+Using Dwolla, it does not charge for transactions less than $10. But up to that amount, Dwolla imposes $0.25 per transaction.
+
+ 
+
+10. Skrill (Moneybookers)
+skrill
+
+Known for being simple and offering pretty basic payment gateway, Skrill is ideal for small businesses or startups. More than 120,000 merchants are reportedly using Skrill, which carries more than 100 payment options and 41 currencies. It feels secure using this payment gateway since customers do not give personal payment information to seller. Sender need not register an account also but the recipient.
