@@ -1,5 +1,5 @@
 Test 123
-
+hgjg
 What is Payment Gateway?
 
 Simply put, a payment gateway helps in processing credit card data securely between the customer and the merchant, and also between merchant and the payment processor. Think of payment gateway as a middleman between the merchant and the sponsoring bank.
