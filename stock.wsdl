@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://localhost:9090/nsaapi/nsaapi/wsdl/stockData.wsdl" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://localhost:9090/nsaapi/nsaapi/wsdl/stockData.wsdl" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+<wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://localhost:9090/nsaapi/nsaapi/wsdl/stockData.wsdl">
+
+      <xs:element name="stockDataRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="1" maxOccurs="1" name="materialCode">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="18"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="materialDescription">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="40"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="plant">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="4"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="plantName">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="30"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="location">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="4"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="locationDescription">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="15"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="1" maxOccurs="1" name="available">
+              <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                  <xs:fractionDigits value="3"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="stockDataResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="status">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:enumeration value="Success"/>
+                  <xs:enumeration value="Error"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="authentication">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element minOccurs="1" maxOccurs="1" type="xs:string" name="userName"/>
+          <xs:element minOccurs="1" maxOccurs="1" type="xs:string" name="password"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+  </xs:schema>  
+</wsdl:types>
+
+  <wsdl:message name="stockDataRequestMessage">
+    <wsdl:part name="body" element="tns:stockDataRequest" />
+    <wsdl:part name="header" element="tns:authentication" />
+  </wsdl:message>
+  <wsdl:message name="stockDataResponseMessage">
+    <wsdl:part name="body" element="tns:stockDataResponse" />
+    <wsdl:part name="header" element="tns:authentication" />
+  </wsdl:message>
+
+  <wsdl:portType name="stockDataUpdateSOAP">
+    <wsdl:operation name="stockDataUpdate">
+      <wsdl:input message="tns:stockDataRequestMessage" />
+      <wsdl:output message="tns:stockDataResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+
+<wsdl:binding name="stockDataUpdateSOAP" type="tns:stockDataUpdateSOAP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <wsdl:operation name="stockDataUpdate">
+      <soap:operation soapAction="http://localhost:9090/nsaapi/nsaapi/services/stockData.php" style="document" />
+      <wsdl:input>
+        <soap:body message="tns:stockDataRequestMessage" parts="body" use="literal" />
+        <soap:header message="tns:stockDataRequestMessage" part="header" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body message="tns:stockDataResponseMessage" parts="body" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+</wsdl:binding>
+
+  <wsdl:service name="stockDataUpdateService">
+    <wsdl:port name="stockDataUpdateSOAP" binding="tns:stockDataUpdateSOAP">
+      <soap:address location="http://localhost:9090/nsaapi/nsaapi/services/stockData.php" />
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>
